@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Vacation Interest Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    
+</head>
+
+<header>
+  <h1 id="title">Ideal Vacation Interest Form</h1>
+</header>
+
+<body>
+  <p id="description">Share with us the vacation of your dreams!</p>
+
+  <form action="#" id="survey-form">
+    <div class="left">
+      <label for="name" id="name-label">Name</label></div>
+    <div class="list">  
+      <input type="text" required placeholder="Name" id="name">
+    </div>
+    <div class="left">
+      <label for="email" class="left" id="email-label">Email</label>
+    </div>
+    <div class="list">  
+      <input type="email" required placeholder="Email" id="email">
+    </div>
+    <div class="left">
+    <label for="age" class="left" id="number-label">Age</label>
+    </div>
+    <div class="list">  
+    <input type="number" required placeholder="age" id="number" min="1" max="100">
+    </div>
+    </div>
+<!------Destination----->
+<section>
+    <div class="left">
+      <label for="locations">Where would you like  to go?</label>
+    </div>
+    <div class="list">
+        <select name="locations" id="dropdown">
+            <option value="Italy">Italy</option>
+            <option value="Japan">Japan</option>
+            <option value="France">France</option>
+            <option value="Morocco">Morocco</option>
+            <option value="United-Kingdom">United Kingdom</option>
+            <option value="Peru">Peru</option>
+            <option value="Austrailia">Austrailia</option>
+        </select>
+    </div>
+</section> 
+<!------Transportation----->     
+<section>
+    <div class="left"><label for="transportation">What is your favorite mode of transportation?</label>
+    </div>
+    <div class="list">    
+        <ul>    
+            <li><label for="plane">
+              <input id="plane" type="radio" name="transportation">Plane</label>
+            <li><label for="train">
+              <input id="train" type="radio" name="transportation">Train</label>
+            <li><label for="boat">
+              <input id="boat" type="radio" name="transportation">Boat</label>
+            <li><label for="motor">
+              <input id="motor" type="radio" name="transportation">Motor</label>
+        </ul>
+    </div>
+</section>
+<!------Interests-----> 
+<section>
+    <div class="left"><label for="why">What do you want to explore most?</label>
+    </div>
+    <div class="list">
+        <ul>
+            <li><label for="cuisine"><input id="cuisine" type="checkbox" name="why" value="interest">Cuisine</label>
+            <li><label for="history"><input id="history" type="checkbox" name="why" value="interest">History</label>
+            <li><label for="culture"><input id="culture" type="checkbox" name="why" value="interest">Culture</label>
+            <li><label for="nature"><input id="nature" type="checkbox" name="why" value="interest">Nature</label>
+            <li><label for="other"><input id="other" type="checkbox" name="why" value="interest">Other</label>
+        </ul>
+    </div>
+</section>
+<!------Destination----->
+<section>    
+    <div class="left" >
+        <label for="comments">Comments?</label>
+    </div>
+    <div class="list">
+          <input class="list" type="text">
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+</section>    
+  </form>
+</body>
+
+</html>
