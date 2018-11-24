@@ -5,6 +5,7 @@
   <title>Vacation Interest Form</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Kavoon|Noto+Sans+SC" rel="stylesheet">
     
 </head>
 
@@ -12,42 +13,44 @@
   <h1 id="title">Ideal Vacation Interest Form</h1>
 </header>
 
+<div class="form">
 <body>
-  <p id="description">Share with us the vacation of your dreams!</p>
+  <h2 id="description">Share with us the vacation of your dreams!</h2>
 
   <form action="#" id="survey-form">
     <div class="left">
       <label for="name" id="name-label">Name</label></div>
     <div class="list">  
-      <input type="text" required placeholder="Name" id="name">
+      <input type="text" required placeholder="Name" id="name" style="width: 250px; height: 20px;">
     </div>
     <div class="left">
       <label for="email" class="left" id="email-label">Email</label>
     </div>
     <div class="list">  
-      <input type="email" required placeholder="Email" id="email">
+      <input type="email" required placeholder="Email" id="email" style="width: 250px; height: 20px;">
     </div>
     <div class="left">
     <label for="age" class="left" id="number-label">Age</label>
     </div>
     <div class="list">  
-    <input type="number" required placeholder="age" id="number" min="1" max="100">
+    <input type="number" required placeholder="Age" id="number" min="1" max="100" style="width: 60px; height: 25px;">
     </div>
-    </div>
+
 <!------Destination----->
 <section>
     <div class="left">
-      <label for="locations">Where would you like  to go?</label>
+      <label for="locations">Where would you like to go?</label>
     </div>
     <div class="list">
         <select name="locations" id="dropdown">
+            <option value="Austrailia">Austrailia</option>
+            <option value="France">France</option>
             <option value="Italy">Italy</option>
             <option value="Japan">Japan</option>
-            <option value="France">France</option>
             <option value="Morocco">Morocco</option>
-            <option value="United-Kingdom">United Kingdom</option>
             <option value="Peru">Peru</option>
-            <option value="Austrailia">Austrailia</option>
+            <option value="United-Kingdom">United Kingdom</option>
+            <option value="where-I-can-hide-from-the-kids">Wherever I can hide from the kids</option>
         </select>
     </div>
 </section> 
@@ -55,7 +58,7 @@
 <section>
     <div class="left"><label for="transportation">What is your favorite mode of transportation?</label>
     </div>
-    <div class="list">    
+    <div class="list x">    
         <ul>    
             <li><label for="plane">
               <input id="plane" type="radio" name="transportation">Plane</label>
@@ -72,7 +75,7 @@
 <section>
     <div class="left"><label for="why">What do you want to explore most?</label>
     </div>
-    <div class="list">
+    <div class="list x">
         <ul>
             <li><label for="cuisine"><input id="cuisine" type="checkbox" name="why" value="interest">Cuisine</label>
             <li><label for="history"><input id="history" type="checkbox" name="why" value="interest">History</label>
@@ -88,7 +91,7 @@
         <label for="comments">Comments?</label>
     </div>
     <div class="list">
-          <input class="list" type="text">
+        <textarea class="list box" style="width: 300px; height: 100px;" placeholder="Please enter your comments here"></textarea>
     </div>
     <div>
       <button type="submit">Submit</button>
@@ -96,5 +99,6 @@
 </section>    
   </form>
 </body>
-
+</div>
+<footer></footer>    
 </html>
